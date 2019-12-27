@@ -1,0 +1,702 @@
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+:root {
+  --ard-hijau-muda: #52de97;
+  --ard-hijau-tua-1: #007855;
+  --ard-hijau-tua-2: #037655;
+  --ard-abu-abu-muda: #d4d7dd;
+  --ard-abu-abu-sedang: #707070;
+  --ard-abu-abu-tua: #3c4245;
+  --ard-putih-abu: #fffefe;
+  --ard-putih-abu-tua: #EBE8E4;
+  --ard-emas: #ffdc34;
+  --ard-putih: #ffffff;
+  --ard-putih-bg:#F6F6F6 ;
+  --ard-font-tangerine: Tangerine;
+  --ard-font-sf-ui-display: "SF UI Display", sans-serif;
+  --ard-font-sitka: "Sitka Display", sans-serif;
+  --ard-font-open-sans: "Open Sans", sans-serif;
+}
+
+.bg-ard-hijau-muda {
+  background: var(--ard-hijau-muda);
+}
+
+.bg-ard-hijau-tua-1 {
+  background: var(--ard-hijau-tua-2);
+}
+
+.bg-ard-abu-abu-muda {
+  background: var(--ard-abu-abu-muda);
+}
+
+.bg-ard-abu-abu-sedang {
+  background: var(--ard-abu-abu-sedang);
+}
+
+.bg-ard-abu-abu-tua {
+  background: var(--ard-abu-abu-tua);
+}
+
+.bg-ard-putih-abu {
+  background: var(--ard-putih-abu);
+}
+
+.bg-ard-putih-abu-tua {
+  background: var(--ard-putih-abu-tua);
+}
+
+.bg-ard-emas {
+  background: var(--ard-emas);
+}
+
+.bg-ard-putih {
+  background: var(--ard-putih);
+}
+
+.bg-ard-putih-for-bg {
+  background: var(--ard-putih-bg);
+}
+
+.text-ard-hijau-muda {
+  color: var(--ard-hijau-muda);
+}
+
+.text-ard-hijau-tua-1 {
+  color: var(--ard-hijau-tua-2);
+}
+
+.text-ard-abu-abu-muda {
+  color: var(--ard-abu-abu-muda);
+}
+
+.text-ard-abu-abu-sedang {
+  color: var(--ard-abu-abu-sedang);
+}
+
+.text-ard-abu-abu-tua {
+  color: var(--ard-abu-abu-tua);
+}
+
+.text-ard-putih-abu {
+  color: var(--ard-putih-abu);
+}
+
+.text-ard-putih-abu-tua {
+  color: var(--ard-putih-abu-tua);
+}
+
+.text-ard-emas {
+  color: var(--ard-emas);
+}
+
+.text-ard-putih {
+  color: var(--ard-putih);
+}
+
+.font-ard-open-sans {
+  font-family: var(--ard-font-open-sans);
+}
+
+.font-ard-sitka {
+  font-family: var(--ard-font-sitka);
+}
+
+.font-ard-tangerine {
+  font-family: var(--ard-font-tangerine);
+}
+
+.font-ard-sf-ui-display {
+  font-family: var(--ard-font-sf-ui-display);
+}
+
+body {
+  font-family: "SF UI Display", sans-serif;
+}
+
+header nav a img {
+  width: auto;
+  height: 12vh;
+}
+header nav #navRestorant ul.navbar-nav {
+  margin-right: 1.5em;
+}
+header nav #navRestorant ul.navbar-nav li a {
+  font-size: 1em;
+  padding: 0.25em 0.5em;
+  background: var(--ard-putih-abu);
+  color: var(--ard-abu-abu-tua);
+  border-radius: 2em;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+header nav #navRestorant form {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+header nav #navRestorant form input {
+  width: 30vw;
+  border-bottom-right-radius: 0;
+}
+header nav #navRestorant form input::placeholder {
+  color: var(--ard-abu-abu-tua);
+}
+header nav #navRestorant form button.btn {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  padding: 0;
+  margin: 0;
+  border-bottom-left-radius: 0;
+}
+header nav #navRestorant form button.fas:hover {
+  color: var(--ard-abu-abu-tua);
+}
+header nav #navRestorant form button.fas {
+  padding-right: 0.25em;
+  border-bottom: 0.17em solid;
+  border-bottom-color: var(--ard-abu-abu-tua);
+  border-bottom-right-radius: 0.17em;
+  padding-top: 0.02em;
+}
+header nav #navRestorant form .form-control {
+  border: none;
+}
+header nav #navRestorant form .form-control:focus {
+  box-shadow: none;
+}
+header nav #navRestorant a.d-flex {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 0.25em 0.75em;
+  border-radius: 2em;
+}
+header nav #navRestorant a.d-flex p {
+  margin-left: 1em;
+  margin-bottom: 0;
+}
+header nav #navRestorant a:hover {
+  text-decoration: none;
+}
+header nav #navRestorant div.btn-group {
+  margin-left: 1em;
+}
+header nav #navRestorant div.btn-group button {
+  border: none;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 0;
+  background: transparent;
+  transition: 0.5s;
+}
+header nav #navRestorant div.btn-group button:focus {
+  background: var(--ard-putih-abu);
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1.25em solid var(--ard-putih-abu);
+}
+header nav #navRestorant div.btn-group button i {
+  padding: 0 0.5em;
+}
+header nav #navRestorant div.btn-group .dropdown-menu {
+  min-width: 1vw;
+  top: 100%;
+  border: none;
+  margin: 0;
+  border-radius: 0 0 1em 1em;
+  background: var(--ard-putih-abu);
+}
+header nav #navRestorant div.btn-group .dropdown-menu .dropdown-item {
+  background-clip: border-box;
+  padding: 0.5rem 1.62rem;
+}
+header nav #navRestorant div.btn-group .dropdown-menu .dropdown-item:hover {
+  cursor: pointer;
+}
+header nav #navRestorant div.btn-group .dropdown-menu .dropdown-item:active {
+  background-color: var(--ard-abu-abu-tua);
+  color: var(--ard-emas);
+}
+
+.animate {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.slideIn {
+  animation-name: slideIn;
+}
+
+.search {
+  color: var(--ard-abu-abu-tua);
+  border-bottom: 0.3em solid !important;
+  border-bottom-color: var(--ard-abu-abu-tua);
+}
+
+#home {
+  height: 87.5em;
+  width: 100%;
+}
+#home.container-fluid {
+  padding: 0;
+}
+#home .container .bg-ard-abu-abu-sedang {
+  background: rgba(60, 66, 69, 0.7) !important;
+}
+#home .container .text-ard-putih {
+  font-family: var(--ard-font-sitka);
+  font-size: 2em;
+}
+#home .container .btn {
+  border-radius: 2em;
+  cursor: default;
+  padding: 0 0.75rem !important;
+}
+#home .container .btn:hover {
+  color: var(--ard-putih);
+}
+#home .container h1 {
+  font-size: 5em;
+  position: relative;
+  transform: translate(0, 50%);
+}
+
+.jumbotron {
+  margin-bottom: 0;
+  background: none;
+}
+
+.jumbotron-lasagna {
+  background: url("../img/lasagna.jpg") no-repeat center;
+  background-size: cover;
+  height: 50%;
+  width: auto;
+}
+
+#homeDesc {
+  height: 50%;
+  padding: 0;
+}
+#homeDesc .row.no-gutters {
+  height: 100%;
+  box-sizing: border-box;
+}
+#homeDesc .row.no-gutters .col-md-3 .card {
+  min-height: 35em;
+  border: 0.25em solid var(--ard-abu-abu-sedang);
+  background-color: transparent;
+  border-radius: 2em;
+  transition: 0.5s;
+}
+#homeDesc .row.no-gutters .col-md-3 .card:hover {
+  background-color: var(--ard-abu-abu-tua);
+}
+#homeDesc .row.no-gutters .col-md-3 .card:hover .card-body {
+  color: var(--ard-putih);
+}
+#homeDesc .row.no-gutters .col-md-3 .card:hover .card-body i {
+  background-color: var(--ard-putih-abu-tua);
+  border: none;
+  color: var(--ard-abu-abu-tua);
+}
+#homeDesc .row.no-gutters .col-md-3 .card:hover .card-body a.btn {
+  border: none;
+  color: inherit;
+  background-color: var(--ard-abu-abu-sedang);
+  transition: 0.5s;
+}
+#homeDesc .row.no-gutters .col-md-3 .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--ard-abu-abu-tua);
+}
+#homeDesc .row.no-gutters .col-md-3 .card .card-body i {
+  margin-top: 0.5em;
+  padding: 0.75em 1em;
+  border-radius: 50%;
+  border: 0.0625em solid var(--ard-abu-abu-tua);
+}
+#homeDesc .row.no-gutters .col-md-3 .card .card-body h5 {
+  font-size: 1.75em;
+  margin-top: 1em;
+}
+#homeDesc .row.no-gutters .col-md-3 .card .card-body p {
+  font-size: 1.25em;
+  padding: 1.5em;
+}
+#homeDesc .row.no-gutters .col-md-3 .card .card-body a.btn {
+  background-color: transparent;
+  border-radius: 1em;
+  border: 0.25em solid var(--ard-abu-abu-sedang);
+}
+
+#special {
+  background-color: var(--ard-putih-bg);
+  padding: 0;
+  height: 46.75em;
+  width: 100%;
+}
+#special .row {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+  height: 100%;
+}
+#special .row > div {
+  height: 80%;
+}
+#special .row > div:first-child {
+  border-radius: 2.5em;
+  background-color: var(--ard-abu-abu-tua);
+}
+#special .row > div:first-child .card {
+  background: none;
+  border: none;
+  height: 100%;
+}
+#special .row > div:first-child .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4em 2em 8em 2em;
+  box-sizing: border-box;
+}
+#special .row > div:first-child .card .card-body > div:first-child h5 {
+  font-size: 3em;
+  color: var(--ard-putih-bg);
+}
+#special .row > div:first-child .card .card-body > div:first-child h5:first-child {
+  margin: 0;
+}
+#special .row > div:first-child .card .card-body > div:last-child button {
+  outline: none;
+  border: none;
+  padding: 0.5em;
+  background-color: var(--ard-putih-bg);
+  color: var(--ard-abu-abu-tua);
+}
+#special .row > div:first-child .card .card-body > div:last-child button:last-child {
+  font-size: 2.75em;
+}
+#special .row > div:last-child .special-header {
+  position: relative;
+  height: 15%;
+  width: 100%;
+  border-radius: 6em;
+  box-sizing: border-box;
+  padding: 0.1em 1em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+#special .row > div:last-child .special-header .d-flex {
+  padding: 0.7em;
+  justify-content: space-evenly;
+  transition: 0.5s;
+}
+#special .row > div:last-child .special-header .d-flex .position-relative {
+  width: 50%;
+}
+#special .row > div:last-child .special-header .d-flex h2 {
+  transition: 0.5s;
+  margin: 0;
+}
+#special .row > div:last-child .special-content {
+  height: 70%;
+  width: 100%;
+}
+#special .row > div:last-child .special-content .card {
+  margin: 0 2em;
+  background: none;
+  border: none;
+}
+#special .row > div:last-child .special-content .card .card-img {
+  border-radius: 2em;
+}
+
+#specialHeaderBG {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 4em;
+  transition: 2s;
+}
+
+.bg-auto-special-header {
+  background-color: var(--ard-putih-bg);
+}
+
+#menu {
+  background-color: var(--ard-putih-bg);
+  padding: 0;
+  height: 93.5em;
+  width: 100%;
+}
+#menu #menuFood {
+  background: var(--ard-putih-bg);
+  height: 50%;
+  padding: 0;
+}
+#menu #menuFood .title {
+  height: 10%;
+  font-size: 3em;
+  font-weight: bold;
+}
+#menu #menuFood .caption-right {
+  display: flex;
+  justify-content: flex-end;
+  height: 20%;
+}
+#menu #menuFood .caption-right div div {
+  margin-bottom: 1em;
+}
+#menu #menuFood .caption-right div h2 {
+  font-size: 4.5em;
+}
+#menu #menuFood .menu-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 69%;
+}
+#menu #menuFood .menu-content .card-menu {
+  height: 100%;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 {
+  -ms-flex: 0 0 22%;
+  flex: 0 0 22%;
+  max-width: 22%;
+  height: 90%;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card {
+  height: 100%;
+  border-radius: 2em;
+  transition: 0.5s;
+  border: none;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body {
+  height: 100%;
+  padding: 1.5em;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .d-flex .card-img-top {
+  width: 70%;
+  height: auto;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-title {
+  height: 15%;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-title h5 {
+  font-size: 1.5em;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu {
+  height: 55%;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order {
+  transition: 0.5s;
+  padding: 0.25em 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order .row {
+  width: 100%;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order .row .col-md-4 {
+  padding: 0;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order .row .col-md-4 h4 {
+  font-size: 1.25em;
+  margin: 0;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order .row .col-md > * {
+  color: var(--ard-putih);
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order .row .col-md p {
+  text-decoration: underline;
+  font-size: 0.75em;
+  margin: 0 !important;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order button {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4em;
+  transition: 0.5s;
+  cursor: pointer;
+  color: var(--ard-abu-abu-tua);
+  background-color: var(--ard-putih);
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order button:hover {
+  color: var(--ard-emas);
+  background-color: var(--ard-abu-abu-tua);
+  transform: scale(1.1);
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order button p {
+  color: inherit;
+  margin: 0 !important;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order button i {
+  color: inherit;
+  font-size: 2em;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-desc {
+  transition: 0.5s;
+  padding: 1em 0 0.25em;
+  height: 100%;
+}
+#menu #menuFood .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-desc p {
+  text-indent: 1em;
+  font-size: 1.125em;
+}
+#menu #menuDrink {
+  background: var(--ard-putih-bg);
+  height: 50%;
+  padding: 0;
+}
+#menu #menuDrink .title {
+  height: 10%;
+  font-size: 3em;
+  font-weight: bold;
+}
+#menu #menuDrink .caption-right {
+  display: flex;
+  justify-content: flex-end;
+  height: 20%;
+}
+#menu #menuDrink .caption-right div div {
+  margin-bottom: 1em;
+}
+#menu #menuDrink .caption-right div h2 {
+  font-size: 4.5em;
+}
+#menu #menuDrink .menu-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 69%;
+}
+#menu #menuDrink .menu-content .card-menu {
+  height: 100%;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 {
+  -ms-flex: 0 0 22%;
+  flex: 0 0 22%;
+  max-width: 22%;
+  height: 90%;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card {
+  height: 100%;
+  border-radius: 2em;
+  transition: 0.5s;
+  border: none;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body {
+  height: 100%;
+  padding: 1.5em;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .d-flex .card-img-top {
+  width: 70%;
+  height: auto;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-title {
+  height: 15%;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-title h5 {
+  font-size: 1.5em;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu {
+  height: 55%;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order {
+  transition: 0.5s;
+  padding: 0.25em 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order .row {
+  width: 100%;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order .row .col-md-4 {
+  padding: 0;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order .row .col-md-4 h4 {
+  font-size: 1.25em;
+  margin: 0;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order .row .col-md > * {
+  color: var(--ard-putih);
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order .row .col-md p {
+  text-decoration: underline;
+  font-size: 0.75em;
+  margin: 0 !important;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order button {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4em;
+  transition: 0.5s;
+  cursor: pointer;
+  color: var(--ard-abu-abu-tua);
+  background-color: var(--ard-putih);
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order button:hover {
+  color: var(--ard-emas);
+  background-color: var(--ard-abu-abu-tua);
+  transform: scale(1.1);
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order button p {
+  color: inherit;
+  margin: 0 !important;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-order button i {
+  color: inherit;
+  font-size: 2em;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-desc {
+  transition: 0.5s;
+  padding: 1em 0 0.25em;
+  height: 100%;
+}
+#menu #menuDrink .menu-content .card-menu .col-lg-3 .card .card-body .content-menu .content-menu-desc p {
+  text-indent: 1em;
+  font-size: 1.125em;
+}
+
+.icon-bg-menu {
+  padding: 0.25em 1em;
+  background-color: var(--ard-abu-abu-tua);
+  color: var(--ard-putih-bg);
+  border-radius: 3em;
+}
+
+.bg-content-menu {
+  background: linear-gradient(180deg, var(--ard-hijau-muda), var(--ard-hijau-tua-2));
+  transform: scale(1.05, 1.1);
+}
+
+/*# sourceMappingURL=ardian.css.map */
